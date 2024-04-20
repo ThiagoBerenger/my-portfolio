@@ -1,0 +1,11 @@
+.navbar {
+    padding: 3rem;    
+    background-color: var(--background-color) !important;
+    color: var(--white) !important;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
