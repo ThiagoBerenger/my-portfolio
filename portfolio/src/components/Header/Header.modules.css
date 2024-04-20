@@ -2,10 +2,9 @@
     padding: 3rem;    
     background-color: var(--background-color) !important;
     color: var(--white) !important;
+    box-shadow: 1px 12px 12px 1px rgba(0, 0, 0, 0.26);
 }
 
 .container {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
