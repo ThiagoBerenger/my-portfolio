@@ -1,10 +1,13 @@
 .navbar {
     padding: 3rem;    
-    background-color: var(--background-color) !important;
-    color: var(--white) !important;
-    box-shadow: 1px 12px 12px 1px rgba(0, 0, 0, 0.26);
+    background-color: var(--white) !important;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 .container {
     width: 100%;
+}
+
+.container a {
+    color: var(--dark-blue) !important;
 }

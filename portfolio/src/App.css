@@ -3,10 +3,11 @@
 /* colors */
 
 :root {
-  --background-color: #13052A;
-  --background-color_2: #3D3258;
-  --white: #F8EBFF;
-  --green: #00C8A2;
+  --background-color: #010326;
+  --dark-blue: #172573;
+  --white: #FFFBFC;
+  --blue: #1D64F2;
+  --blue_2: #6A66D9;
 }
 
 * {

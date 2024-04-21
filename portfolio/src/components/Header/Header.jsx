@@ -12,7 +12,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="#home">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Formações</Nav.Link>
+            <Nav.Link href="#home">Sobre mim</Nav.Link>
             <Nav.Link href="#features">Portifólio</Nav.Link>
             <Nav.Link href="#pricing">Contato</Nav.Link>
           </Nav>
