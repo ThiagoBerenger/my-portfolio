@@ -1,0 +1,27 @@
+.hero-section {
+    display: flex;
+    padding: 4rem;
+    height: 90vh;
+    background-image: linear-gradient(var(--dark-blue), var(--blue));
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.hero-section_text h1 {
+    color: var(--black);
+}
+
+
+
+
+.hero-section_image img {
+    width: 300px;
+    height: auto;
+}

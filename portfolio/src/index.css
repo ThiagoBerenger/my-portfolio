@@ -6,3 +6,11 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --black: #0D0D0D;
+  --dark-blue: #141A26;
+  --blue: #2E3D59;
+  --purple: #8679D9;
+  --purple_2: #5833A6;
+}
