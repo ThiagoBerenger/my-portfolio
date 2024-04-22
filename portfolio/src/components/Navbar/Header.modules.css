@@ -2,3 +2,7 @@
     height: 8rem;
     background-color: var(--dark-blue);
 }
+
+.navbar svg {
+    font-size: 42px;
+}

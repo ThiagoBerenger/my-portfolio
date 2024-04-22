@@ -1,10 +1,10 @@
 .hero-section {
     display: flex;
-    padding: 4rem;
-    height: 90vh;
+    padding: 8rem 0;
     background-image: linear-gradient(var(--dark-blue), var(--blue));
     justify-content: center;
     align-items: center;
+    gap: 4rem;
 }
 
 .hero-section_text {
@@ -12,16 +12,26 @@
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    color: #ccc;
 }
-
-.hero-section_text h1 {
-    color: var(--black);
-}
-
-
-
 
 .hero-section_image img {
     width: 300px;
     height: auto;
+    border-radius: 12px;
+    border: 10px solid var(--blue);
+}
+
+.tech-container {
+    background-color: var(--black);
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tech-container svg {
+    font-size: 62px;
+    color: var(--blue);
 }
