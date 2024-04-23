@@ -18,9 +18,10 @@ const Header = () => {
             <FaConnectdevelop />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Formações</Nav.Link>
-            <Nav.Link href="#features">Projetos</Nav.Link>
-            <Nav.Link href="#pricing">Contato</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#formacoes">Formações</Nav.Link>
+            <Nav.Link href="#projetos">Projetos</Nav.Link>
+            <Nav.Link href="#contato">Contato</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
