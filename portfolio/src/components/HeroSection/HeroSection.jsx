@@ -2,7 +2,7 @@ import React from 'react'
 
 import './HeroSection.modules.css'
 
-// technologies
+// icons
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -10,6 +10,8 @@ import { FaReact } from "react-icons/fa6";
 import { FaBootstrap } from "react-icons/fa";
 import { DiJqueryLogo } from "react-icons/di";
 import { SiXdadevelopers } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 import fotoGit from '../../assets/fotoGit.jpg'
 import devImage from '../../assets/devImage.svg'
@@ -21,7 +23,14 @@ const HeroSection = () => {
           <div className="hero-section_text">
             <h1>Thiago Berenger</h1>
             <h3>Desenvolvedor Front-end</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor impedit pariatur facilis, beatae id, saepe, omnis vitae labore unde in praesentium amet quidem accusantium repellat ducimus dolorum optio culpa.</p>
+            <div className="hero-section_icons">
+              <a href="https://github.com/ThiagoBerenger" target='blank'>
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/thiago-berenger/" target='blank'>
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
           <div className="hero-section_image">
             <img src={devImage} alt="Picture" />
@@ -40,7 +49,7 @@ const HeroSection = () => {
               <img src={fotoGit} alt="Picture GitHub"/>
                 <div className="about-container_text">
                   <h1>Sobre mim <SiXdadevelopers /></h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quisquam pariatur harum necessitatibus eligendi rem ipsa repellat amet atque praesentium, nostrum iure in ipsum, eveniet ut, delectus numquam dignissimos?</p>
+                  <p>Como desenvolvedor front-end, estou constantemente imerso no universo da programação. Minha jornada no desenvolvimento web começou com um fascínio pela interatividade proporcionada pelo JavaScript, e desde então, tenho mergulhado nas complexidades do React para construir aplicações dinâmicas e eficientes. Atualmente, curso Análise e Desenvolvimento de Sistemas, ao longo do último ano, tenho me dedicado ao aprendizado contínuo e à aplicação prática dos conceitos aprendidos. Com um olhar voltado para o futuro, estou determinado a expandir meu conjunto de habilidades para abraçar o mundo do desenvolvimento full stack, combinando minha paixão pela estética com a robustez do back-end. Estou ansioso para colaborar em projetos desafiadores e contribuir para a construção de soluções inovadoras.</p>
                 </div>  
               </div>              
           </div>

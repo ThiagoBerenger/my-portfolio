@@ -22,6 +22,17 @@
     color: var(--light-blue);
 }
 
+.hero-section_icons svg{
+    font-size: 32px;
+    margin: .4rem 1rem 0 0;
+    color: var(--blue);
+    transition: .4s ease;
+}
+
+.hero-section_icons svg:hover {
+    transform: translateY(-8px);
+}
+
 .hero-section_image {
     display: flex;
     flex-direction: column;

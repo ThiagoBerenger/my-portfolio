@@ -9,8 +9,8 @@ const Footer = () => {
     <>
       <div className="footer-container">
           <div className="footer-social">
-            <a href="" target='blank'><FaGithub /></a>
-            <a href="" target='blank'><FaLinkedin /></a>
+            <a href="https://github.com/ThiagoBerenger" target='blank'><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/thiago-berenger/" target='blank'><FaLinkedin /></a>
           </div>
           <p>thberenger27@gmail.com</p>
       </div>
