@@ -1,0 +1,10 @@
+.skill-container {
+    height: 40vh;
+    background-image: linear-gradient(var(--purple_2), var(--dark-blue));
+    padding: 4rem 10rem;
+}
+
+.skill-container h1 {
+    color: var(--blue);
+    font-size: 42px;
+}

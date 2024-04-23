@@ -2,13 +2,12 @@
     display: flex;
     flex-direction: column;
     padding: 8rem 0;
-    background-image: linear-gradient(var(--purple_2), var(--dark-blue));
+    background-image: linear-gradient(var(--dark-blue), var(--black));
     gap: 4rem;
-    box-shadow: 2px 1px 30px 10px rgba(0, 0, 0, 0.425);
 }
 
 .certificates_container h1{
-    font-size: 52px;
+    font-size: 42px;
     color: var(--blue);
     padding: 0rem 0 2rem 10rem;
     font-style: italic;
