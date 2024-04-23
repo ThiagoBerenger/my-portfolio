@@ -35,7 +35,10 @@ const HeroSection = () => {
           </div>
         </div>
           <div className="about-container">
-
+              <div className="about-container_text">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quisquam pariatur harum necessitatibus eligendi rem ipsa repellat amet atque praesentium, nostrum iure in ipsum, eveniet ut, delectus numquam dignissimos?</p>
+              </div>
           </div>
     </>
   )

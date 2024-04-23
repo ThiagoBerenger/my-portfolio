@@ -5,4 +5,5 @@
 
 .navbar svg {
     font-size: 42px;
+    color: var(--light-blue);
 }
