@@ -9,6 +9,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
 import { FaBootstrap } from "react-icons/fa";
 import { DiJqueryLogo } from "react-icons/di";
+import { SiXdadevelopers } from "react-icons/si";
 
 import fotoGit from '../../assets/fotoGit.jpg'
 import devImage from '../../assets/devImage.svg'
@@ -35,10 +36,13 @@ const HeroSection = () => {
           </div>
         </div>
           <div className="about-container">
-              <div className="about-container_text">
-                <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quisquam pariatur harum necessitatibus eligendi rem ipsa repellat amet atque praesentium, nostrum iure in ipsum, eveniet ut, delectus numquam dignissimos?</p>
-              </div>
+              <div className="about-container_box">
+              <img src={fotoGit} alt="Picture GitHub"/>
+                <div className="about-container_text">
+                  <h1>Sobre mim <SiXdadevelopers /></h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quisquam pariatur harum necessitatibus eligendi rem ipsa repellat amet atque praesentium, nostrum iure in ipsum, eveniet ut, delectus numquam dignissimos?</p>
+                </div>  
+              </div>              
           </div>
     </>
   )

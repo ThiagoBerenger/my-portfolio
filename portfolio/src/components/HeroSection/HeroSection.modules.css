@@ -57,23 +57,31 @@
 
 .about-container {
     background-color: var(--dark-blue);
-    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    padding: 4rem 12rem;
+}
+
+.about-container_box {
+    display: flex;
+    justify-content: center;
     padding: 4rem;
+    border-radius: 2rem;    
+    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.404);
+    background-color: var(--purple_2);
+    gap: 4rem;
+}
+
+.about-container_box img {
+    width: 200px;
+    height: 200px !important;
+    height: auto;
+    border-radius: 20% 0% 20% 20%;
+    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.301);
 }
 
 .about-container_text {
-    width: 70%;
-    background-color: var(--purple_2);
-    padding: 4rem;
-    height: 90vh;
-    border-radius: 2rem;
-    align-items: center;
-    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.404);
-}
-
-.about-container h1, p {
     color: var(--blue);
+    width: 40%;
 }
