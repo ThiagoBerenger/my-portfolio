@@ -1,7 +1,7 @@
 .hero-section {
     display: flex;
     padding: 8rem 0;
-    background-image: linear-gradient(var(--dark-blue), var(--blue));
+    background-image: linear-gradient(var(--purple_2), var(--dark-blue));
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -15,23 +15,37 @@
     color: #ccc;
 }
 
+.hero-section_text p {
+    width: 80%;
+}
+
+.hero-section_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease all;
+}
+
+.hero-section_image:hover {
+    transform: scale(1.1, 1.1);
+    transform: rotate(4deg);
+}
+
 .hero-section_image img {
-    width: 300px;
-    height: auto;
-    border-radius: 12px;
-    border: 10px solid var(--blue);
+    width: 500px;    
 }
 
 .tech-container {
-    background-color: var(--black);
-    padding: 4rem;
+    background-color: var(--dark-blue);
+    padding: .4rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
 }
 
 .tech-container svg {
-    font-size: 62px;
+    font-size: 42px;
     color: var(--blue);
 }
