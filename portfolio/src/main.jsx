@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './Routes/Home.jsx'
 import Contact from './Routes/Contact.jsx'
+import Skills from './Routes/Skills.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'contact',
+        path: 'contato',
         element: <Contact />
+      },
+      {
+        path: 'habilidades',
+        element: <Skills />
       },
     ]
   }

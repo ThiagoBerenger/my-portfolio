@@ -14,12 +14,12 @@ const Header = () => {
     <>
       <Navbar data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <FaConnectdevelop />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#formacoes">Formações</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/habilidades">Habilidades</Nav.Link>
             <Nav.Link href="#projetos">Projetos</Nav.Link>
             <Nav.Link href="#contato">Contato</Nav.Link>
           </Nav>
