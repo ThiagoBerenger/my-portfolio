@@ -8,6 +8,8 @@ import { FaReact } from "react-icons/fa6";
 import { FaBootstrap } from "react-icons/fa";
 import { DiJqueryLogo } from "react-icons/di";
 
+import Skillbar from '../Skillbar/Skillbar'
+
 const SkillsSection = () => {
   return (
     <>
@@ -32,7 +34,8 @@ const SkillsSection = () => {
             <div className="tech-item">
                 <DiJqueryLogo/>
             </div>
-        </div>
+        </div>     
+        <Skillbar />   
       </div>
     </>
   )

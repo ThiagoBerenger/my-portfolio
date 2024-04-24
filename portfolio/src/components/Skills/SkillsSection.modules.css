@@ -1,5 +1,4 @@
 .skill-container {
-    height: 40vh;
     background-image: linear-gradient(var(--purple_2), var(--dark-blue));
     padding: 4rem 10rem;
     display: flex;
@@ -11,6 +10,7 @@
     color: var(--blue);
     font-size: 42px;
     margin-bottom: 4rem;
+    font-weight: 200;
 }
 
 .techs-container {
@@ -22,12 +22,59 @@
 }
 
 .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px inset, rgba(71, 64, 163, 0.5) -3px -3px 6px 1px inset;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 2 ease;
+    margin-bottom: 8rem;
 }
 
 .tech-item svg{
-    font-size: 92px;
+    font-size: 72px;
     color: var(--blue);
-    padding: 1rem;
 }
 
+.circle-container {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.circle-box {
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px, rgba(71, 64, 163, 0.5) -3px -3px 6px 1px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px inset;}
+
+    .number {
+        font-weight: 600;
+        color: var(--blue);
+    }
