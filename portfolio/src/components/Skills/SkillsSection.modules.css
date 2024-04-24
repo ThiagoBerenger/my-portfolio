@@ -2,9 +2,32 @@
     height: 40vh;
     background-image: linear-gradient(var(--purple_2), var(--dark-blue));
     padding: 4rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skill-container h1 {
     color: var(--blue);
     font-size: 42px;
+    margin-bottom: 4rem;
 }
+
+.techs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.tech-item {
+    box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px inset, rgba(71, 64, 163, 0.5) -3px -3px 6px 1px inset;
+}
+
+.tech-item svg{
+    font-size: 92px;
+    color: var(--blue);
+    padding: 1rem;
+}
+
