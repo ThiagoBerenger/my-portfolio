@@ -3,7 +3,52 @@
     background-color: var(--purple_2);
 }
 
+.nav-bars {
+    display: none;
+}
+
 .navbar svg {
     font-size: 42px;
     color: var(--light-blue);
+}
+
+.navbar_dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .nav-bars {
+        display: block;
+        font-weight: 300 !important;
+        cursor: pointer;
+    }
+
+    .hidden-navbar {
+        display: none;
+    }
+
+    .navbar_dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;        
+        background-color: var(--blue);
+    }
+
+    .navbar_dropdown-link {
+        border-bottom: 1px solid var(--light-blue);
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .navbar_dropdown a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
 }
