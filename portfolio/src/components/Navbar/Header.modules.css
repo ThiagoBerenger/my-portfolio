@@ -25,12 +25,20 @@
 .navbar_dropdown-link a {
     text-decoration: none;
     color: var(--black);
+    padding-left: 6rem;
+    flex: 1;
+    width: 100%;
 }
 
 .navbar_dropdown-link {
+    display: flex;
     border-bottom: 1px solid var(--light-blue);
-    flex: 1;
     padding: 1rem;
+    transition: .5s ease;
+}
+
+.navbar_dropdown-link:hover {
+    background-color: var(--light-blue);
 }
 
 @media screen and (max-width: 1000px) {
