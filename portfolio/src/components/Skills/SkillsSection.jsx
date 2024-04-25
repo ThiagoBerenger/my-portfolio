@@ -35,7 +35,11 @@ const SkillsSection = () => {
                 <DiJqueryLogo/>
             </div>
         </div>     
-        <Skillbar />   
+
+        <div className="skillbar-container">
+          <h4>Linguagens mais usadas</h4>
+          <Skillbar />  
+        </div> 
       </div>
     </>
   )
