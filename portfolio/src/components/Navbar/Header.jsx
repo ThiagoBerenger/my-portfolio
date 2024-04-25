@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './Header.modules.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,10 +37,10 @@ const Header = () => {
         </Container>
       </Navbar>
       <div className="hidden-navbar" ref={navRef}>
-          <div className="navbar_dropdown-link"><a href="#">Home</a></div>
-          <div className="navbar_dropdown-link"><a href="#">Habilidades</a></div>
-          <div className="navbar_dropdown-link"><a href="#">Projetos</a></div>
-          <div className="navbar_dropdown-link"><a href="#">Contato</a></div>
+          <div className="navbar_dropdown-link"><Link to='/'>Home</Link></div>
+          <div className="navbar_dropdown-link"><Link to="/habilidades">Habilidades</Link></div>
+          <div className="navbar_dropdown-link"><Link to="#projetos">Projetos</Link></div>
+          <div className="navbar_dropdown-link"><Link to="#contato">Contato</Link></div>
       </div>
     </>
   )
