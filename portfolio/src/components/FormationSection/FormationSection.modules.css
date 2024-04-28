@@ -8,9 +8,9 @@
 
 .certificates_container h1{
     font-size: 42px;
+    font-weight: 200;
     color: var(--blue);
     padding: 0rem 0 2rem 10rem;
-    font-style: italic;
 }
 
 .certificates_container {
@@ -36,7 +36,7 @@
 .certificate-item_box p {
     margin-top: 2rem;
     width: 90%;
-    color: var(--black);
+    color: #fff;
 }
 
 .certificate-item {
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     width: 400px;
-    background-color: var(--purple);
+    background-color: var(--purple_2);
 }
 
 .certificate-item img{
