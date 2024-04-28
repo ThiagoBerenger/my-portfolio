@@ -14,7 +14,7 @@ const FormationSection = () => {
                     <div className="certificate-item_box">
                         <div className="certificate-item">
                             <img src={certificadoFront} alt="Certificado Front-End" />
-                            <p>Certificado de Conclusão do curso "Formação Front-end - HTML, CSS, JavaScript, React e +", do professor Matheus Batisti - Udemy</p>
+                            <p>Certificado de Conclusão do curso "Formação Front-end - HTML, CSS, JavaScript, React e +", do professor Matheus Batisti.</p>
                         </div>
                         {/* <div className="certificate-item">
                             <img src={certificadoFront} alt="Certificado Full-Stack" />
