@@ -11,8 +11,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import NavButton from '../NavButton/NavButton';
-
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 const Header = () => {
@@ -35,7 +33,7 @@ const Header = () => {
             <Nav.Link href="#projetos">Projetos</Nav.Link>
             <Nav.Link href="#contato">Contato</Nav.Link>
           </Nav>
-          <HiMiniBars3BottomRight className='nav-bars' onClick={showNavbar} />
+            <button className="hamburger" onClick={showNavbar}></button>
         </Container>
       </Navbar>
       <div className="hidden-navbar" ref={navRef}>
