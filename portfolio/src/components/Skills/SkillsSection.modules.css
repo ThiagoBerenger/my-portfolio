@@ -22,11 +22,8 @@
 }
 
 .tech-item {
-    display: flex;
-    flex-direction: column;
     box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px inset, rgba(71, 64, 163, 0.5) -3px -3px 6px 1px inset;
     padding: 1rem;
-    cursor: pointer;
     transition: 2 ease;
     margin-bottom: 8rem;
 }
@@ -34,6 +31,30 @@
 .tech-item svg{
     font-size: 72px;
     color: var(--blue);
+}
+
+@media screen and (max-width: 900px) {
+    .skill-container {
+        padding: 2rem 0rem;
+    }
+    
+    .skill-container h1 {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+    
+    .techs-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .tech-item {
+        margin-bottom: 1rem;
+    }
+    
+    .tech-item svg{
+        font-size: 42px;
+    }
 }
 
 

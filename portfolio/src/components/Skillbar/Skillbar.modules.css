@@ -17,4 +17,30 @@
 
 .skillbar-container h4 {
     margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {   
+    
+    .skillbar-container {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .progress {
+        margin: 1rem;
+    }
+
+    .progress-bar {
+        font-size: 12px;
+    }
+    
+    .skillbar-container {
+        width: 100%;
+        color: var(--blue);
+    }
+    
+    .skillbar-container h4 {
+        margin: 1rem 0;
+    }
 }
