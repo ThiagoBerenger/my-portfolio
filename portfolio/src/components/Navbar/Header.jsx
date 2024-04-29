@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -11,14 +11,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import { HiMiniBars3BottomRight } from "react-icons/hi2";
-
 const Header = () => {
   const navRef = useRef()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const showNavbar = () => {
-    navRef.current.classList.toggle('navbar_dropdown')
-  }
+  const toggleNavbar = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeNavbar = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <>
@@ -33,14 +36,14 @@ const Header = () => {
             <Nav.Link href="#projetos">Projetos</Nav.Link>
             <Nav.Link href="#contato">Contato</Nav.Link>
           </Nav>
-            <button className="hamburger" onClick={showNavbar}></button>
+            <button className="hamburger" onClick={toggleNavbar}></button>
         </Container>
       </Navbar>
-      <div className="hidden-navbar" ref={navRef}>
+      <div className={`hidden-navbar ${isMenuOpen ? 'active' : ''}`} ref={navRef}>
           <div className="navbar_dropdown-link"><Link to='/'>Home</Link></div>
-          <div className="navbar_dropdown-link"><Link to="/habilidades">Habilidades</Link></div>
-          <div className="navbar_dropdown-link"><Link to="#projetos">Projetos</Link></div>
-          <div className="navbar_dropdown-link"><Link to="#contato">Contato</Link></div>
+          <div className="navbar_dropdown-link"><Link to="/habilidades" onClick={closeNavbar}>Habilidades</Link></div>
+          <div className="navbar_dropdown-link"><Link to="#projetos" onClick={closeNavbar}>Projetos</Link></div>
+          <div className="navbar_dropdown-link"><Link to="#contato" onClick={closeNavbar}>Contato</Link></div>
       </div>
     </>
   )
