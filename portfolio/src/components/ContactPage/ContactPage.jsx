@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import { FaCheckCircle } from "react-icons/fa";
 
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation';
 
 const ContactPage = () => {
     const form = useRef();    
@@ -39,6 +40,7 @@ const ContactPage = () => {
 
     return (      
     <>
+    <ScrollAnimation />
         <div className="contact-container">
         <div className="pop-up">
             <div className="check-box"><FaCheckCircle/></div>
@@ -46,7 +48,7 @@ const ContactPage = () => {
                 <p>Mensagem Enviada</p>
             </div>
         </div>
-            <div className='contact-form'>
+            <div className='contact-form hidden-elements'>
                 <form ref={form} onSubmit={sendEmail}>
                   <label>Nome</label>
                   <input type="text" name="user_name" />

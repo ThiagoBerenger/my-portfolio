@@ -10,12 +10,15 @@ import { DiJqueryLogo } from "react-icons/di";
 
 import Skillbar from '../Skillbar/Skillbar'
 
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation';
+
 const SkillsSection = () => {
   return (
     <>
+    <ScrollAnimation />
       <div className="skill-container">
         <h1>Tecnologias</h1>
-        <div className="techs-container">
+        <div className="techs-container hidden-elements">
             <div className="tech-item">
                 <FaHtml5/>
             </div>
@@ -36,7 +39,7 @@ const SkillsSection = () => {
             </div>
         </div>     
 
-        <div className="skillbar-container">
+        <div className="skillbar-container hidden-elements">
           <h4>Linguagens mais usadas</h4>
           <Skillbar />  
         </div> 

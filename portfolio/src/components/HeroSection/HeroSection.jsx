@@ -2,6 +2,8 @@ import React from 'react'
 
 import './HeroSection.modules.css'
 
+import ScrollAnimation from '../../components/ScrollAnimation/ScrollAnimation'
+
 // icons
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -19,8 +21,9 @@ import devImage from '../../assets/devImage.svg'
 const HeroSection = () => {
   return (
     <>
+    <ScrollAnimation />
         <div className="hero-section">
-          <div className="hero-section_text">
+          <div className="hero-section_text hidden-elements">
             <h1>Thiago Berenger</h1>
             <h3>Desenvolvedor Front-end</h3>
             <div className="hero-section_icons">
@@ -44,8 +47,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-          <div className="about-container">
-              <div className="about-container_box">
+          <div className="about-container ">
+              <div className="about-container_box hidden-elements">
               <img src={fotoGit} alt="Picture GitHub"/>
                 <div className="about-container_text">
                   <h1>Sobre mim <SiXdadevelopers /></h1>

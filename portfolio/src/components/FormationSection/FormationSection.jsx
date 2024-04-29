@@ -4,11 +4,14 @@ import './FormationSection.modules.css'
 import certificadoFront from '../../assets/certificadoFront.jpg'
 import rocketImage from '../../assets/rocketImage.svg'
 
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
+
 const FormationSection = () => {
   return (
     <>
-        <div className="formation-container">
-            <div className="certificates_container">
+    <ScrollAnimation />
+        <div className="formation-container ">
+            <div className="certificates_container hidden-elements">
                 <h1>Certificados</h1>
                 <div className="certificate-item_container">
                     <div className="certificate-item_box">
