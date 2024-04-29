@@ -32,8 +32,8 @@ const ContactPage = () => {
     };
   
     function popUpScreen () {
-            const popUp = document.querySelector('.pop-up');
-            popUp.style.display = 'flex';
+         const popUp = document.querySelector('.pop-up');
+         popUp.style.display = 'flex';
     }
 
 
