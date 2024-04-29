@@ -34,16 +34,16 @@ const Header = () => {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/habilidades">Habilidades</Nav.Link>
             <Nav.Link href="#projetos">Projetos</Nav.Link>
-            <Nav.Link href="#contato">Contato</Nav.Link>
+            <Nav.Link href="/contato">Contato</Nav.Link>
           </Nav>
             <button className="hamburger" onClick={toggleNavbar}></button>
         </Container>
       </Navbar>
       <div className={`hidden-navbar ${isMenuOpen ? 'active' : ''}`} ref={navRef}>
-          <div className="navbar_dropdown-link"><Link to='/'>Home</Link></div>
+          <div className="navbar_dropdown-link"><Link to='/' onClick={closeNavbar}>Home</Link></div>
           <div className="navbar_dropdown-link"><Link to="/habilidades" onClick={closeNavbar}>Habilidades</Link></div>
           <div className="navbar_dropdown-link"><Link to="#projetos" onClick={closeNavbar}>Projetos</Link></div>
-          <div className="navbar_dropdown-link"><Link to="#contato" onClick={closeNavbar}>Contato</Link></div>
+          <div className="navbar_dropdown-link"><Link to="/contato" onClick={closeNavbar}>Contato</Link></div>
       </div>
     </>
   )
