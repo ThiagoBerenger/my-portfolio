@@ -2,24 +2,27 @@ import React, { useRef } from 'react'
 import './ContactPage.modules.css'
 import emailjs from "@emailjs/browser";
 
+import { FaCheckCircle } from "react-icons/fa";
+
 
 const ContactPage = () => {
-    const form = useRef();
+    const form = useRef();    
 
     const sendEmail = (e) => {
       e.preventDefault();
   
       emailjs
         .sendForm(
-          "replace with service id",
-          "replace with template id",
+          "service_t3vpu9b",
+          "template_e32aa2a",
           form.current,
-          "replace with user id"
+          "BCL8tLDZAxY4Jtxgi"
         )
         .then(
           (result) => {
             console.log(result.text);
-            console.log("message sent");
+            console.log("Mensagem Enviada");
+            form.current.reset()
           },
           (error) => {
             console.log(error.text);
@@ -27,9 +30,15 @@ const ContactPage = () => {
         );
     };
   
-    return (
-      
+    return (      
+    <>
         <div className="contact-container">
+        <div className="pop-up">
+            <div className="check-box"><FaCheckCircle/></div>
+            <div className="pop-up_text">
+                <p>Mensagem Enviada</p>
+            </div>
+        </div>
             <div className='contact-form'>
                 <form ref={form} onSubmit={sendEmail}>
                   <label>Nome</label>
@@ -42,6 +51,7 @@ const ContactPage = () => {
                 </form>
             </div>
         </div>
+    </>
       
     );
   };

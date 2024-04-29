@@ -1,5 +1,6 @@
 .contact-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 4rem;
@@ -60,3 +61,35 @@
     color: white;
     border: none;
   }
+
+  .pop-up {
+    top: 12rem;
+    width: 200px;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    display: flex;
+    transition: 1s ease;
+    gap: 10px;
+    align-items: center;
+}
+
+.check-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0;
+  height: 100%;
+  width: 40%;
+  border-radius: 1.6rem 0 0 1.6rem;
+}
+
+.pop-up svg {
+  font-size: 32px;
+  color: #0d0d0d;
+}
+
+.pop-up_text p{
+  padding-top: .6rem;
+  
+}
+
