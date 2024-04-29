@@ -23,6 +23,7 @@ const ContactPage = () => {
             console.log(result.text);
             console.log("Mensagem Enviada");
             form.current.reset()
+            popUpScreen()
           },
           (error) => {
             console.log(error.text);
@@ -30,6 +31,12 @@ const ContactPage = () => {
         );
     };
   
+    function popUpScreen () {
+            const popUp = document.querySelector('.pop-up');
+            popUp.style.display = 'flex';
+    }
+
+
     return (      
     <>
         <div className="contact-container">
