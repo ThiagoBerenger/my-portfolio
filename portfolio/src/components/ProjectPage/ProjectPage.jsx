@@ -1,5 +1,13 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './ProjectPage.modules.css'
+
+// swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-creative';
+import { EffectCreative } from 'swiper/modules';
+
+// ----
 
 import { FaCode } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -14,28 +22,49 @@ const ProjectPage = () => {
                 <h1>Projetos <FaCode /> </h1>
                 <p>Você poderá ver todos os projetos em meu GitHub </p>
             </div>
-            <div className="projects-item_container">
-                <div className="project-item">
-                    <img src={projectImage} alt="Projeto 1" />
-                    <div className="item-text">
-                        <h4>Unipaz Website</h4>
-                        <p>Site sendo desenvolvido para a empresa UNIPAZ Serviços. O intuito do projeto é atualizar a identidade da empresa no ambiente web, com um site atrativo, que traga uma experiência agradável e prática ao usuário.</p>
-                    </div>
-                </div>
-                <div className="project-item">
-                    <img src={projectImage} alt="Projeto 2" />
-                    <div className="item-text">
-                        <h4>Projeto 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div className="project-item">
-                    <img src={projectImage} alt="Projeto 3" />
-                    <div className="item-text">
-                        <h4>Projeto 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+            
+            <div className="projects-item_container">              
+            <Swiper
+        grabCursor={true}
+        effect={'creative'}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: ['-20%', 0, -1],
+          },
+          next: {
+            translate: ['100%', 0, 0],
+          },
+        }}
+        modules={[EffectCreative]}
+        className="mySwiper3"
+      >
+        <SwiperSlide>
+            <div className="project-item">
+                <h1>um</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="project-item">
+                <h1>dois</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="project-item">
+                <h1>três</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="project-item">
+                <h1>quatro</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="project-item">
+                <h1>cinco</h1>
+            </div>
+        </SwiperSlide>
+      </Swiper>
             </div>
         </div>
     </>
