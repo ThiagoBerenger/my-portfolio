@@ -10,6 +10,7 @@ import { EffectCreative } from 'swiper/modules';
 // ----
 
 import { FaCode } from "react-icons/fa6";
+import { FaHandPointLeft } from "react-icons/fa";
 
 // images
 import projectImage from '../../assets/certificadoFront.jpg'
@@ -29,10 +30,17 @@ const ProjectPage = () => {
         <div className="projects-container">
             <div className="projects-text hidden-elements">
                 <h1>Projetos <FaCode /> </h1>
-                <p>Você poderá ver todos os projetos em meu GitHub </p>
+                <p>Você poderá ver todos os projetos em meu GitHub.</p>
             </div>
-            
+
+            <div className="responsive-message_left hidden-elements">
+                Arraste para esquerda <FaHandPointLeft/>
+            </div>
+        
             <div className="projects-item_container hidden-elements">              
+            
+            <h1>Arraste para esquerda <FaHandPointLeft/></h1>          
+
             <Swiper
         grabCursor={true}
         effect={'creative'}
