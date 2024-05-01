@@ -10,7 +10,6 @@ import { EffectCreative } from 'swiper/modules';
 // ----
 
 import { FaCode } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
 
 // images
 import projectImage from '../../assets/certificadoFront.jpg'
@@ -19,17 +18,21 @@ import memoryGame from '../../assets/projectsImage/memoryGame.png'
 import carProject from '../../assets/projectsImage/carProject.png'
 import sJoseph from '../../assets/projectsImage/sjoseph.png'
 
+// animation
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation'
+
 
 const ProjectPage = () => {
   return (
     <>
+    <ScrollAnimation />
         <div className="projects-container">
-            <div className="projects-text">
+            <div className="projects-text hidden-elements">
                 <h1>Projetos <FaCode /> </h1>
                 <p>Você poderá ver todos os projetos em meu GitHub </p>
             </div>
             
-            <div className="projects-item_container">              
+            <div className="projects-item_container hidden-elements">              
             <Swiper
         grabCursor={true}
         effect={'creative'}
@@ -50,6 +53,7 @@ const ProjectPage = () => {
                 <div className="item-text">
                     <h2>Unipaz Website</h2>
                     <p>Site desenvolvido para a empresa UNIPAZ Serviços. O intuito do projeto é atualizar a identidade da empresa no ambiente web, com um site atrativo, que traga uma experiência agradável e prática ao usuário.</p>
+                    <a href="https://github.com/lucasberenger/unipaz" target="blank">Leia a Documentação</a>
                 </div>
             </div>
         </SwiperSlide>
@@ -59,6 +63,7 @@ const ProjectPage = () => {
                 <div className="item-text">
                     <h2>S. Joseph Website</h2>
                     <p>Site da empresa S. Joseph, feito pela Hostinger em Wordpress.</p>
+                    <a href="https://sjoseph.com.br/" target="blank">Acesse o Site</a>
                 </div>
             </div>
         </SwiperSlide>
@@ -68,6 +73,7 @@ const ProjectPage = () => {
                 <div className="item-text">
                     <h2>Jogo da Memória</h2>
                     <p>Jogo da memória desenvolvido em Javacript, com a temática da série da Amazon Prime "Invincible".</p>
+                    <a href="https://github.com/ThiagoBerenger/berenger-invincible.github.io" target="blank">Leia a Documentação</a>
                 </div>
             </div>
         </SwiperSlide>
@@ -77,6 +83,7 @@ const ProjectPage = () => {
                 <div className="item-text">
                     <h2>Carro em JavaScript</h2>
                     <p>Um projeto simples de carro usando a linguagem Javascript.</p>
+                    <a href="https://github.com/ThiagoBerenger/carro-javascript" target="blank">Leia a Documentação</a>
                 </div>
             </div>
         </SwiperSlide>
@@ -86,6 +93,7 @@ const ProjectPage = () => {
                 <div className="item-text">
                     <h2>Exercícios Beecrowd</h2>
                     <p>Algumas soluções de exercícios realizados para praticar a linguagem Javascript.</p>
+                    <a href="https://github.com/ThiagoBerenger/beecrowdjs" target="blank">Leia a Documentação</a>
                 </div>
             </div>
         </SwiperSlide>
