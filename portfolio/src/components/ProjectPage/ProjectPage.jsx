@@ -12,7 +12,13 @@ import { EffectCreative } from 'swiper/modules';
 import { FaCode } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+// images
 import projectImage from '../../assets/certificadoFront.jpg'
+import beecrowdExercices from '../../assets/projectsImage/beecrowdExercices.png'
+import memoryGame from '../../assets/projectsImage/memoryGame.png'
+import carProject from '../../assets/projectsImage/carProject.png'
+import sJoseph from '../../assets/projectsImage/sjoseph.png'
+
 
 const ProjectPage = () => {
   return (
@@ -29,11 +35,10 @@ const ProjectPage = () => {
         effect={'creative'}
         creativeEffect={{
           prev: {
-            shadow: true,
-            translate: ['-20%', 0, -1],
+            translate: ['-20%', 0, -500],
           },
           next: {
-            translate: ['100%', 0, 0],
+            translate: ['100%', 0, -500],
           },
         }}
         modules={[EffectCreative]}
@@ -41,27 +46,47 @@ const ProjectPage = () => {
       >
         <SwiperSlide>
             <div className="project-item">
-                <h1>um</h1>
+                <img src={projectImage} alt="Projeto" />
+                <div className="item-text">
+                    <h2>Unipaz Website</h2>
+                    <p>Site desenvolvido para a empresa UNIPAZ Serviços. O intuito do projeto é atualizar a identidade da empresa no ambiente web, com um site atrativo, que traga uma experiência agradável e prática ao usuário.</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="project-item">
+                <img src={sJoseph} alt="Wordpress site" />
+                <div className="item-text">
+                    <h2>S. Joseph Website</h2>
+                    <p>Site da empresa S. Joseph, feito pela Hostinger em Wordpress.</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="project-item">
+                <img src={memoryGame} alt="Jogo da Memória" />
+                <div className="item-text">
+                    <h2>Jogo da Memória</h2>
+                    <p>Jogo da memória desenvolvido em Javacript, com a temática da série da Amazon Prime "Invincible".</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="project-item">
+                <img src={carProject} alt="Projeto Carro" />
+                <div className="item-text">
+                    <h2>Carro em JavaScript</h2>
+                    <p>Um projeto simples de carro usando a linguagem Javascript.</p>
+                </div>
             </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className="project-item">
-                <h1>dois</h1>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="project-item">
-                <h1>três</h1>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="project-item">
-                <h1>quatro</h1>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="project-item">
-                <h1>cinco</h1>
+                <img src={beecrowdExercices} alt="Beecrowd" />
+                <div className="item-text">
+                    <h2>Exercícios Beecrowd</h2>
+                    <p>Algumas soluções de exercícios realizados para praticar a linguagem Javascript.</p>
+                </div>
             </div>
         </SwiperSlide>
       </Swiper>
